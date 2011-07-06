@@ -9,6 +9,9 @@ if [[ ${$(uname -o)} =~ .*Linux.* ]]; then
 
     export PATH=$PATH:$HOME/android-sdk-linux_x86/tools:$HOME/android-ndk
 
+    # Editor should be set to nano, until I decide if I'm going to break down and learn emacs.
+    export EDITOR="nano"
+
     # Clever gedit alias function:
     gedit() {
         command "gedit" "$@" &
